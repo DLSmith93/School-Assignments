@@ -1,0 +1,77 @@
+
+Devin Smith *** cs260 *** review #1 *** Professor Liang
+
+1. What fucntions your ADT will have?
+   ----------------------------------
+   My program will have functions to take care of adding songs to the list,
+   allocation dynamic memory cop\ying data read in from a user. I will also
+   have a fucntion to read in and enter song data from an external data file.
+   Other functions will include ones for deleting, searching and appending 
+   sonngs that are in the list.
+
+2. How will each fucntion report success/failure bacl to calling routine?
+   ----------------------------------------------------------------------
+   The way the fucntions will report back success or failure is through bool.
+   all the fucntions that have anything to do with the list ADT returns a 
+   bool back tio the client. These are usually in the form of fairly simple 
+   messages such as if the list is empty a message such as "Failed to display
+   list, may be empty!", or something along those lines. If data was read in
+   from an external file a success message will pop up "Successfully read in
+   songs from file". another example is to check if a song has already been
+   entered into the list. The list will be checked and if it is, it wont be
+   added and a false will be returned back to the client.
+
+3. How will the details of the data structures be shielded from the client?
+   ------------------------------------------------------------------------
+   This was accomplished through using classes and wrapper fucntions. The 
+   important stuff is shielded behind the private area of the classses. I also
+   have two seperate classes managing both data types, the list and the data 
+   that goes into the list. The class that holds sing info calls the list 
+   class fucntions for the most part adding another layer of safety.
+
+4. What data structures will you be using and how each of the special cases?
+   -------------------------------------------------------------------------
+   I used two seperate classes. One to manage the linked lis and the other
+   to define the data that will be in the list. for example the song class in 
+   the private area has dynamic arrays for  the artists name and title of the 
+   song, an int for the time, and long for the likes of the song as these can
+   be quite large numbers depnding on the song.
+
+5. Which fucntion/fucntions are recursive
+   --------------------------------------
+   To be quite honest only the fucntion that displays the list uses recursin
+   this is becasue I am pretty rusty and this is one of the easiest algorithms
+   for recursion to think through. At least for me, I will definately be using 
+   more recursion in future projects. I like recursion, its elegent and also
+   complicated in its simplicity.
+
+
+   TEST PLAN
+   -----------
+
+   1. Testing adding songs
+      
+      The testing of adding songs will entail several different checks. 
+      The first will be if the list is built or not. 
+      Next the test will be if the same song gets added a second time, an 
+      error message will be thrown from the client if so.
+
+   2. Testing Searching for artist
+
+      This one is pretty straigth forward. Fist theres a check to see if the
+      list is empty. Next there is a check if the artist is even present in
+      in the list. A boolian is returned back to client and a message is 
+      displayed back to the user.
+
+   3. Testing deleting songs
+
+      For Deleting songs I checked tested this along three parameters. The
+      first being if the entire list gets deleted. The next being if just the
+      head of the list is deleted, nodes from the middle and finally the last 
+      node.
+
+   4. Testing appending song likes
+   
+      As before it is tested weather the list is empty or not. Then a check
+      is done to see if the song is even in the list, if not the fucntion is
+      returned to the client and an error messege is displayed to the user.

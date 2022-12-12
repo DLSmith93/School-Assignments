@@ -1,0 +1,52 @@
+Bob Dylan
+Positively 4th Street
+3.54
+85000
+Pink Floyd
+Wish You Were Here
+5.35
+17500
+Kenny Loggins
+Im Alright
+3.25
+16000
+Post Malone
+Up There
+3.15
+15000
+Post Malone
+Enemies(feat. DaBaby)
+3.1
+14000
+The Grateful Dead
+High Times
+5.16
+13000
+The Lumineer
+Salt and the Sea
+4.31
+12500
+Bob Dylan
+Lay Lady, Lay
+3.18
+12000
+Pink Floyd
+Time
+6.53
+10000
+The Grateful Dead
+Stagger Lee
+3.2
+7500
+Sierra Ferral
+In Dreams
+2.42
+6000
+The lumineers
+Walls
+3.2
+5500
+Sierra Ferral
+Hey Me, Hey Mama
+3.31
+5000
