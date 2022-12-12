@@ -26,6 +26,8 @@ list::~list(){
 
     while(current){
         head = current->next;
+        delete []current->info.artist;
+        delete []current->info.title;
         delete current;
         current = head;
     }
@@ -172,6 +174,8 @@ bool list::del(user input){
             if(temp){
                 temp->next = current->next;
             }
+            delete []current->info.artist;
+            delete []current->info.title;
             delete current;
             current = temp->next;
             error = true;
